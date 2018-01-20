@@ -1,10 +1,8 @@
 package com.techlabs.basic;
-import java.io.*;
 
-public class welcometext {
+public class HelloWorld {
 	public static void main(String args[])
 	{
-		System.out.println("Hello");
+		System.out.println("Hello world");
 	}
-
 }
