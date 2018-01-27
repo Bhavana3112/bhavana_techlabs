@@ -1,37 +1,37 @@
 package com.techlabs.basic;
+
 import java.io.*;
 import java.lang.*;
 import java.util.*;
 
 public class ArrayListMagnetTest {
-	public static void main(String args[])
-	{
+	public static void main(String args[]) {
 		ArrayList<String> a = new ArrayList<String>();
-		a.add(0,"zero");
-		a.add(1,"one");
-		a.add(2,"two");
-		a.add(3,"three");
+		a.add(0, "zero");
+		a.add(1, "one");
+		a.add(2, "two");
+		a.add(3, "three");
 		printAL(a);
-		if(a.contains("three")){
+		if (a.contains("three")) {
 			a.add("four");
 		}
 		a.remove(2);
 		printAL(a);
-		if(a.indexOf("four")!= 4){
-			a.add(4,"4.2");
+		if (a.indexOf("four") != 4) {
+			a.add(4, "4.2");
 		}
 		printAL(a);
-		if(a.contains("two")){
+		if (a.contains("two")) {
 			a.add("2.2");
 		}
 		printAL(a);
 	}
-	public static void printAL(ArrayList<String> al)
-	{
-		for(String element : al){
+
+	public static void printAL(ArrayList<String> al) {
+		for (String element : al) {
 			System.out.print(element + " ");
 		}
 		System.out.println(" ");
-		
+
 	}
 }
