@@ -7,15 +7,7 @@ import java.io.IOException;
 public class WriteFileTest {
 
 	public static void main(String[] args) throws IOException {
-
-		/*
-		 * PrintWriter writer = new
-		 * PrintWriter("C:\\Users\\Bhavana\\Desktop\\temp.txt", "UTF-8");
-		 * writer.println("Hello world"); writer.close();
-		 */
-
-		FileWriter fname = new FileWriter(
-				"C:\\Users\\Bhavana\\Desktop\\temp.txt", true);
+		FileWriter fname = new FileWriter("datafolder\\temp.txt", true);
 		BufferedWriter out = new BufferedWriter(fname);
 		out.write(" \n Hello world");
 		out.close();
