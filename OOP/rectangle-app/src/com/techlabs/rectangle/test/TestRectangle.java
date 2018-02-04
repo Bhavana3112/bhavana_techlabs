@@ -7,9 +7,9 @@ public class TestRectangle {
 		Rectangle r1;
 		
 		r1 = new Rectangle();
-		r1.setHeight(11);
-		r1.setWidth(105);
-		System.out.println("area= " + r1.calculateArea());
+		r1.setHeight(50);
+		r1.setWidth(50);
+		System.out.println("area = " + r1.calculateArea());
 
 	}
 }
