@@ -26,7 +26,7 @@ class Annotate {
 
 public class AnnotateTest {
 	@SuppressWarnings("unchecked")
-	public static void main(String[] args) throws NoSuchMethodException {
+	public static void main(String[] args){
 		try {
 			Annotate a = new Annotate();
 
