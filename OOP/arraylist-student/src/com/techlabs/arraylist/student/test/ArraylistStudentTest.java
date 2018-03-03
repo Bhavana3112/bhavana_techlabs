@@ -22,7 +22,7 @@ public class ArraylistStudentTest {
 			out.writeObject(al);
 			out.close();
 			fout.close();
-			System.out.println("Object has been serailized");
+			System.out.println("Object has been serialized");
 
 		} catch (Exception e) {
 			e.printStackTrace();
