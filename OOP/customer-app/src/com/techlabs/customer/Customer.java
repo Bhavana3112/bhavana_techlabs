@@ -1,21 +1,24 @@
 package com.techlabs.customer;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class Customer {
 	private int custid;
 	private String firstname;
 	private String lastname;
 	private int moneyspent;
-	private static int count;
+	private static final AtomicInteger count = new AtomicInteger(1000); 
 	public Customer(String firstname, String lastname,
 			int moneyspent) {
 		this.firstname = firstname;
 		this.lastname = lastname;
 		this.moneyspent = moneyspent;
-		count++;
+	    custid = count.incrementAndGet(); 
+
 		this.custid=getCustid();
 	}
 	public int getCustid() {
-		return 1000+count;
+		return custid;
 	}
 	public String getFirstname() {
 		return firstname;
@@ -26,7 +29,7 @@ public class Customer {
 	public int getMoneyspent() {
 		return moneyspent;
 	}
-	public static int getCount(){
+	public static AtomicInteger getCount(){
 		return count;
 	}
 	
